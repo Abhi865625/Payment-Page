@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Method</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style_payment.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="payment-card">
+          <h4 class="card-title">Select Payment Method</h4>
+          <div class="payment-option">
+            <label>
+              <input type="radio" name="payment-method">
+              <span class="card-label">Pay with Debit/Credit/ATM Cards</span>
+                <img class="card-logo" src="images/vi.png" alt="PayPal">
+                <img class="card-logo" src="images/mc.png" alt="Mastercard">
+                <img class="card-logo" src="images/rupay-logo-icon.png" alt="Mastercard">
+                
+            </label>
+            <div class="card-details">
+              <!-- Mastercard details input fields -->
+              <div class="row">
+                <div class="col">
+                  <input type="text" placeholder="Cardholder Name">
+                </div>
+                <div class="col">
+                  <input type="text" placeholder="Card Number">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input type="text" placeholder="Expiration Date (MM/YY)">
+                </div>
+                <div class="col">
+                  <input type="number" placeholder="CVV">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <button type="button" class="btn btn-primary">Pay Now</button>
+                </div>
+                <div class="col">
+                  <span class="cvv-info">What's CVV? <a href="#">Learn more</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="payment-option">
+            <label>
+              <input type="radio" name="payment-method">
+              <img class="card-logo" src="images/pp.png" alt="PayPal">
+              <span class="card-label">PayPal</span>
+            </label>
+            <div class="card-details">
+              <!-- PayPal details input fields -->
+              <div class="row">
+                <div class="col">
+                  <input type="email" placeholder="PayPal Email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input type="password" placeholder="PayPal Password">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <button type="button" class="btn btn-primary">Pay Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="payment-option">
+            <label>
+              <input type="radio" name="payment-method">
+              <img class="card-logo" src="images/upi-icon.png" alt="UPI">
+              <span class="card-label">UPI</span>
+            </label>
+            <div class="card-details">
+              <!-- UPI details input fields -->
+              <div class="row">
+                <div class="col">
+                  <input type="text" placeholder="UPI ID">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <button type="button" class="btn btn-primary">Pay Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="payment-option">
+            <label>
+              <input type="radio" name="payment-method">
+              <img class="card-logo" src="images/qr-code-scan-icon.png" alt="QR Code">
+              <span class="card-label">Scan QR Code</span>
+            </label>
+            <div class="card-details">
+              <!-- QR code scanner or upload field -->
+              <div class="row">
+                <div class="col">
+                  <!-- Add QR code scanner or upload field here -->
+                  <input type="file" accept="image/*">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <button type="button" class="btn btn-primary">Pay Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
